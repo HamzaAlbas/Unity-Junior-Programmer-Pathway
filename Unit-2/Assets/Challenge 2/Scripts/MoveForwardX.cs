@@ -10,5 +10,9 @@ public class MoveForwardX : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        if (transform.position.y < -15)
+            Destroy(gameObject);
+        if (transform.position.x < -50)
+            Destroy(gameObject);
     }
 }

@@ -5,14 +5,21 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;
+    public float refill = 3f;
+    private float x = 3;
+
 
     // Update is called once per frame
     void Update()
     {
+       
         // On spacebar press, send dog
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && x >= refill)
         {
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+            x = 0;
         }
+
+        x += Time.deltaTime;
     }
 }
