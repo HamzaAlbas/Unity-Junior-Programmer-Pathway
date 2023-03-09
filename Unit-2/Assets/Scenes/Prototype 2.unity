@@ -557,7 +557,9 @@ MonoBehaviour:
   - {fileID: 7455895225076299454, guid: 3166ff1a937aad5429a1a3a77ef14a15, type: 3}
   - {fileID: 3489234428434640521, guid: ad0325d1ebf1b2d48b4487e20b3452d9, type: 3}
   - {fileID: 8721593397921152096, guid: 47f4d2f9b66b0f74588847b27fdb81c0, type: 3}
-  spawnRangeX: 20
+  spawnDelay: 2
+  spawnInterval: 1.5
+  spawnRangeX: 15
   spawnPosZ: 25
 --- !u!4 &864105211
 Transform:
@@ -626,7 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 2891984492116458692, guid: a488e9bcb984e5e439a3fb2296fede15, type: 3}
-  speed: 10
+  speed: 15
   maxPos: 15
 --- !u!1 &1590138454
 GameObject:
